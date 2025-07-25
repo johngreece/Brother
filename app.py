@@ -43,11 +43,12 @@ class Service(db.Model):
     icon = db.Column(db.String(100))
 
 # 语言选择函数
-@babel.localeselector
 def get_locale():
     if 'lang' in session:
         return session['lang']
     return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+
+babel.init_app(app, locale_selector=get_locale)
 
 # 语言切换路由
 @app.route('/language/<language>')

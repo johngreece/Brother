@@ -77,4 +77,7 @@ def submit_contact():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True) 
+    app.run(debug=True)
+
+# 为Vercel部署添加
+app.debug = False 

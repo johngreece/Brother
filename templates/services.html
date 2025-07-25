@@ -1,0 +1,347 @@
+{% extends "base.html" %}
+
+{% block title %}服务项目 - Brother集团{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="section-title">服务项目</h1>
+                <p class="lead">为您提供全方位的商业解决方案</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Services -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- 转运服务 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h3 class="card-title mb-0">转运服务</h3>
+                        </div>
+                        <p class="card-text">专业的国际物流转运服务，为客户提供安全、快速、经济的货物运输解决方案。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>国际货物运输</li>
+                            <li><i class="fas fa-check text-success me-2"></i>清关服务</li>
+                            <li><i class="fas fa-check text-success me-2"></i>货物保险</li>
+                            <li><i class="fas fa-check text-success me-2"></i>实时跟踪</li>
+                            <li><i class="fas fa-check text-success me-2"></i>仓储中转</li>
+                            <li><i class="fas fa-check text-success me-2"></i>配送服务</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 仓储服务 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3 class="card-title mb-0">仓储服务</h3>
+                        </div>
+                        <p class="card-text">现代化仓储设施和智能化的库存管理系统，为客户提供高效的仓储解决方案。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>货物存储</li>
+                            <li><i class="fas fa-check text-success me-2"></i>库存管理</li>
+                            <li><i class="fas fa-check text-success me-2"></i>订单处理</li>
+                            <li><i class="fas fa-check text-success me-2"></i>包装服务</li>
+                            <li><i class="fas fa-check text-success me-2"></i>质量检验</li>
+                            <li><i class="fas fa-check text-success me-2"></i>供应链优化</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 供应链管理 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3 class="card-title mb-0">供应链管理</h3>
+                        </div>
+                        <p class="card-text">全面的供应链管理服务，帮助客户优化流程、降低成本、提高效率。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>供应链设计</li>
+                            <li><i class="fas fa-check text-success me-2"></i>流程优化</li>
+                            <li><i class="fas fa-check text-success me-2"></i>成本控制</li>
+                            <li><i class="fas fa-check text-success me-2"></i>风险管理</li>
+                            <li><i class="fas fa-check text-success me-2"></i>供应商管理</li>
+                            <li><i class="fas fa-check text-success me-2"></i>数据分析</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 贸易服务 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="card-title mb-0">贸易服务</h3>
+                        </div>
+                        <p class="card-text">专业的进出口贸易服务，为客户提供全方位的贸易解决方案。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>进出口代理</li>
+                            <li><i class="fas fa-check text-success me-2"></i>商业咨询</li>
+                            <li><i class="fas fa-check text-success me-2"></i>市场调研</li>
+                            <li><i class="fas fa-check text-success me-2"></i>合同谈判</li>
+                            <li><i class="fas fa-check text-success me-2"></i>商业代表</li>
+                            <li><i class="fas fa-check text-success me-2"></i>贸易融资</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 人才服务 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="card-title mb-0">人才服务</h3>
+                        </div>
+                        <p class="card-text">专业的人员安置和人才引进服务，为企业提供优质的人力资源解决方案。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>人员安置</li>
+                            <li><i class="fas fa-check text-success me-2"></i>人才引进</li>
+                            <li><i class="fas fa-check text-success me-2"></i>猎头服务</li>
+                            <li><i class="fas fa-check text-success me-2"></i>培训服务</li>
+                            <li><i class="fas fa-check text-success me-2"></i>人力资源咨询</li>
+                            <li><i class="fas fa-check text-success me-2"></i>劳务派遣</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 商业服务 -->
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h3 class="card-title mb-0">商业服务</h3>
+                        </div>
+                        <p class="card-text">多元化的商业服务，包括餐饮酒店、超市经营、电子商务等业务。</p>
+                        
+                        <h5 class="mt-4 mb-3">服务内容：</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>餐饮酒店经营</li>
+                            <li><i class="fas fa-check text-success me-2"></i>超市经营</li>
+                            <li><i class="fas fa-check text-success me-2"></i>电子商务</li>
+                            <li><i class="fas fa-check text-success me-2"></i>自媒体运营</li>
+                            <li><i class="fas fa-check text-success me-2"></i>品牌推广</li>
+                            <li><i class="fas fa-check text-success me-2"></i>市场运营</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">咨询详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Process -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">服务流程</h2>
+            <p class="section-subtitle">简单高效的服务流程，确保客户满意度</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4>需求沟通</h4>
+                    <p class="text-muted">深入了解客户需求，制定个性化解决方案</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h4>方案制定</h4>
+                    <p class="text-muted">专业团队制定详细的服务方案和报价</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>服务执行</h4>
+                    <p class="text-muted">按照既定方案高效执行，确保服务质量</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>持续支持</h4>
+                    <p class="text-muted">提供持续的客户支持和售后服务</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">为什么选择我们</h2>
+            <p class="section-subtitle">专业的服务团队，丰富的行业经验</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-award text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>专业认证</h5>
+                        <p class="text-muted">获得多项国际认证，确保服务质量和安全性</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-globe text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>全球网络</h5>
+                        <p class="text-muted">覆盖全球50多个国家的服务网络</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-clock text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>24/7服务</h5>
+                        <p class="text-muted">全天候客户服务，随时响应需求</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-chart-line text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>丰富经验</h5>
+                        <p class="text-muted">10年行业经验，服务超过1000家企业</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-shield-alt text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>安全保障</h5>
+                        <p class="text-muted">完善的安全保障体系，确保货物安全</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-dollar-sign text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>价格优势</h5>
+                        <p class="text-muted">具有竞争力的价格，为客户节省成本</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">开始您的项目</h2>
+                <p class="lead mb-4">联系我们，获取专业的服务方案和个性化报价</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">立即咨询</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

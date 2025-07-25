@@ -1,0 +1,190 @@
+{% extends "base.html" %}
+
+{% block title %}Brother集团 - 专业转运服务与贸易解决方案{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold mb-4">专业转运服务与贸易解决方案</h1>
+                <p class="lead mb-4">Brother集团致力于为客户提供全方位的转运服务、仓储管理、供应链解决方案及进出口贸易服务，助力企业全球化发展。</p>
+                <div class="d-flex gap-3">
+                    <a href="{{ url_for('services') }}" class="btn btn-light btn-lg">了解服务</a>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">联系我们</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="物流运输" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">核心服务</h2>
+            <p class="section-subtitle">为您提供一站式商业解决方案</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h4>转运服务</h4>
+                    <p class="text-muted">专业的国际物流转运服务，快速安全的货物运输解决方案</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h4>仓储服务</h4>
+                    <p class="text-muted">现代化仓储设施，智能化的库存管理和供应链优化</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>贸易服务</h4>
+                    <p class="text-muted">全面的进出口贸易服务，商业咨询和代表服务</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 text-center p-4">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>人才服务</h4>
+                    <p class="text-muted">专业的人员安置和人才引进服务，助力企业发展</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="section-title">关于Brother集团</h2>
+                <p class="lead mb-4">Brother集团是一家综合性企业集团，专注于转运服务、仓储管理、供应链解决方案及进出口贸易服务。</p>
+                <p class="mb-4">我们拥有丰富的行业经验和专业的服务团队，致力于为客户提供高质量、高效率的商业解决方案。通过全球化的网络布局和本地化的服务能力，我们帮助客户实现业务增长和全球化发展。</p>
+                <a href="{{ url_for('about') }}" class="btn btn-primary">了解更多</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="企业办公" class="img-fluid rounded-3 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Categories -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">产品类别</h2>
+            <p class="section-subtitle">丰富的产品线，满足多样化需求</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h6>机械设备</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-laptop service-icon"></i>
+                    <h6>电子设备</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-solar-panel service-icon"></i>
+                    <h6>光伏产品</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-car service-icon"></i>
+                    <h6>汽车零件</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-tshirt service-icon"></i>
+                    <h6>服装纺织</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-home service-icon"></i>
+                    <h6>家居用品</h6>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <a href="{{ url_for('products') }}" class="btn btn-primary">查看全部产品</a>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="display-4 fw-bold mb-2">10+</div>
+                <p class="lead">年行业经验</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="display-4 fw-bold mb-2">50+</div>
+                <p class="lead">服务国家</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="display-4 fw-bold mb-2">1000+</div>
+                <p class="lead">合作客户</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="display-4 fw-bold mb-2">24/7</div>
+                <p class="lead">客户服务</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">准备开始您的项目？</h2>
+                <p class="lead mb-4">联系我们，获取专业的商业解决方案和个性化服务</p>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">立即咨询</a>
+                    <a href="tel:00302104408818" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-phone me-2"></i>0030-2104408818
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

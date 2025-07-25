@@ -1,0 +1,360 @@
+{% extends "base.html" %}
+
+{% block title %}产品展示 - Brother集团{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="section-title">产品展示</h1>
+                <p class="lead">丰富的产品线，满足多样化需求</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Category Filter -->
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                    <a href="{{ url_for('products') }}" 
+                       class="btn {% if current_category == 'all' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        全部产品
+                    </a>
+                    <a href="{{ url_for('products', category='machinery') }}" 
+                       class="btn {% if current_category == 'machinery' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        机械设备
+                    </a>
+                    <a href="{{ url_for('products', category='electronics') }}" 
+                       class="btn {% if current_category == 'electronics' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        电子设备
+                    </a>
+                    <a href="{{ url_for('products', category='solar') }}" 
+                       class="btn {% if current_category == 'solar' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        光伏产品
+                    </a>
+                    <a href="{{ url_for('products', category='automotive') }}" 
+                       class="btn {% if current_category == 'automotive' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        汽车零件
+                    </a>
+                    <a href="{{ url_for('products', category='textile') }}" 
+                       class="btn {% if current_category == 'textile' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        服装纺织
+                    </a>
+                    <a href="{{ url_for('products', category='home') }}" 
+                       class="btn {% if current_category == 'home' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                        家居用品
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Grid -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- 机械设备 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="工业机械">
+                    <div class="card-body">
+                        <h5 class="card-title">工业机械设备</h5>
+                        <p class="card-text">高品质的工业机械设备，包括加工设备、制造设备、自动化设备等，广泛应用于各个行业。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">机械设备</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 电子设备 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="电子设备">
+                    <div class="card-body">
+                        <h5 class="card-title">电子设备</h5>
+                        <p class="card-text">先进的电子设备和科技产品，包括计算机、通信设备、消费电子产品等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">电子设备</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 光伏产品 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="光伏产品">
+                    <div class="card-body">
+                        <h5 class="card-title">光伏产品</h5>
+                        <p class="card-text">高效的光伏产品和太阳能设备，包括太阳能板、逆变器、储能系统等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">光伏产品</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 汽车零件 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="汽车零件">
+                    <div class="card-body">
+                        <h5 class="card-title">汽车零件</h5>
+                        <p class="card-text">优质的汽车零件和配件，包括发动机零件、制动系统、轮胎等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">汽车零件</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 服装纺织 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="服装纺织">
+                    <div class="card-body">
+                        <h5 class="card-title">服装纺织品</h5>
+                        <p class="card-text">时尚的服装纺织品，包括各类服装、面料、箱包、鞋袜等产品。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">服装纺织</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 家居用品 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="家居用品">
+                    <div class="card-body">
+                        <h5 class="card-title">家居用品</h5>
+                        <p class="card-text">精美的家居用品和装饰材料，包括家具、装饰品、生活用品等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">家居用品</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 食品类 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="食品类">
+                    <div class="card-body">
+                        <h5 class="card-title">食品类</h5>
+                        <p class="card-text">优质的食品和酒水产品，包括各类食品、饮料、酒类等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">食品类</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 文化用品 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="文化用品">
+                    <div class="card-body">
+                        <h5 class="card-title">文化用品</h5>
+                        <p class="card-text">丰富的文化用品，包括文具、办公用品、学习用品等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">文化用品</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 会议展览设备 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         class="card-img-top" alt="会议展览设备">
+                    <div class="card-body">
+                        <h5 class="card-title">会议展览设备</h5>
+                        <p class="card-text">专业的会议和展览设备用品，包括音响设备、展示设备等。</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">会议展览</span>
+                            <small class="text-muted">咨询价格</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Categories Overview -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">产品类别</h2>
+            <p class="section-subtitle">全面的产品线，满足不同行业需求</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-cogs service-icon"></i>
+                    <h6>机械设备</h6>
+                    <small class="text-muted">工业设备、制造设备</small>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-laptop service-icon"></i>
+                    <h6>电子设备</h6>
+                    <small class="text-muted">计算机、通信设备</small>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-solar-panel service-icon"></i>
+                    <h6>光伏产品</h6>
+                    <small class="text-muted">太阳能设备</small>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-car service-icon"></i>
+                    <h6>汽车零件</h6>
+                    <small class="text-muted">汽车配件</small>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-tshirt service-icon"></i>
+                    <h6>服装纺织</h6>
+                    <small class="text-muted">服装、面料</small>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="card text-center p-3">
+                    <i class="fas fa-home service-icon"></i>
+                    <h6>家居用品</h6>
+                    <small class="text-muted">家具、装饰</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Features -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">产品优势</h2>
+            <p class="section-subtitle">为什么选择我们的产品</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-certificate text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>品质保证</h5>
+                        <p class="text-muted">所有产品均通过严格的质量检验，确保品质可靠</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-shipping-fast text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>快速配送</h5>
+                        <p class="text-muted">全球物流网络，确保产品快速安全送达</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-dollar-sign text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>价格优势</h5>
+                        <p class="text-muted">具有竞争力的价格，为客户节省成本</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-headset text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>技术支持</h5>
+                        <p class="text-muted">专业的技术团队，提供产品使用指导</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-shield-alt text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>售后保障</h5>
+                        <p class="text-muted">完善的售后服务，解决客户后顾之忧</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-globe text-primary fa-2x me-3"></i>
+                    </div>
+                    <div>
+                        <h5>全球供应</h5>
+                        <p class="text-muted">覆盖全球的供应链网络，货源充足稳定</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">需要产品咨询？</h2>
+                <p class="lead mb-4">联系我们，获取详细的产品信息和报价</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">立即咨询</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

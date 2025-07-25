@@ -1,0 +1,156 @@
+# English translations for Brother Group website.
+# Copyright (C) 2024 Brother Group
+# This file is distributed under the same license as the Brother Group project.
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2024-01-01 12:00+0000\n"
+"Last-Translator: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Brother集团"
+msgstr "Brother Group"
+
+msgid "Brother集团 - 专业转运服务与贸易解决方案"
+msgstr "Brother Group - Professional Logistics and Trade Solutions"
+
+msgid "首页"
+msgstr "Home"
+
+msgid "关于我们"
+msgstr "About Us"
+
+msgid "服务项目"
+msgstr "Services"
+
+msgid "产品展示"
+msgstr "Products"
+
+msgid "新闻动态"
+msgstr "News"
+
+msgid "联系我们"
+msgstr "Contact"
+
+msgid "专业提供转运服务、仓储服务、供应链管理及贸易解决方案的综合性企业集团。"
+msgstr "A comprehensive enterprise group specializing in logistics services, warehousing, supply chain management and trade solutions."
+
+msgid "转运服务"
+msgstr "Logistics Services"
+
+msgid "仓储服务"
+msgstr "Warehousing Services"
+
+msgid "贸易服务"
+msgstr "Trade Services"
+
+msgid "人才服务"
+msgstr "Talent Services"
+
+msgid "产品类别"
+msgstr "Product Categories"
+
+msgid "机械设备"
+msgstr "Machinery Equipment"
+
+msgid "电子产品"
+msgstr "Electronic Products"
+
+msgid "服装纺织"
+msgstr "Textiles & Apparel"
+
+msgid "家居用品"
+msgstr "Home Goods"
+
+msgid "深圳市南山区科技园"
+msgstr "Nanshan District, Shenzhen"
+
+msgid "保留所有权利"
+msgstr "All Rights Reserved"
+
+msgid "专业转运服务与贸易解决方案"
+msgstr "Professional Logistics and Trade Solutions"
+
+msgid "Brother集团致力于为客户提供全方位的转运服务、仓储管理、供应链解决方案及进出口贸易服务，助力企业全球化发展。"
+msgstr "Brother Group is committed to providing comprehensive logistics services, warehousing management, supply chain solutions and import-export trade services to help enterprises achieve global development."
+
+msgid "了解服务"
+msgstr "Learn More"
+
+msgid "物流运输"
+msgstr "Logistics Transportation"
+
+msgid "核心服务"
+msgstr "Core Services"
+
+msgid "为您提供一站式商业解决方案"
+msgstr "Providing One-Stop Business Solutions"
+
+msgid "专业的国际物流转运服务，快速安全的货物运输解决方案"
+msgstr "Professional international logistics services with fast and secure cargo transportation solutions"
+
+msgid "现代化仓储设施，智能化的库存管理和供应链优化"
+msgstr "Modern warehousing facilities with intelligent inventory management and supply chain optimization"
+
+msgid "全面的进出口贸易服务，商业咨询和代表服务"
+msgstr "Comprehensive import-export trade services, business consulting and representation"
+
+msgid "专业的人员安置和人才引进服务，助力企业发展"
+msgstr "Professional personnel placement and talent recruitment services to help enterprise development"
+
+msgid "关于Brother集团"
+msgstr "About Brother Group"
+
+msgid "Brother集团是一家综合性企业集团，专注于转运服务、仓储管理、供应链解决方案及进出口贸易服务。"
+msgstr "Brother Group is a comprehensive enterprise group focused on logistics services, warehousing management, supply chain solutions and import-export trade services."
+
+msgid "我们拥有丰富的行业经验和专业的服务团队，致力于为客户提供高质量、高效率的商业解决方案。通过全球化的网络布局和本地化的服务能力，我们帮助客户实现业务增长和全球化发展。"
+msgstr "We have rich industry experience and professional service teams, committed to providing high-quality and efficient business solutions for customers. Through global network layout and localized service capabilities, we help customers achieve business growth and global development."
+
+msgid "了解更多"
+msgstr "Learn More"
+
+msgid "企业办公"
+msgstr "Corporate Office"
+
+msgid "丰富的产品线，满足多样化需求"
+msgstr "Rich product line to meet diverse needs"
+
+msgid "电子设备"
+msgstr "Electronic Equipment"
+
+msgid "光伏产品"
+msgstr "Solar Products"
+
+msgid "汽车零件"
+msgstr "Auto Parts"
+
+msgid "查看全部产品"
+msgstr "View All Products"
+
+msgid "年行业经验"
+msgstr "Years Experience"
+
+msgid "服务国家"
+msgstr "Countries Served"
+
+msgid "合作客户"
+msgstr "Partners"
+
+msgid "客户服务"
+msgstr "Customer Service"
+
+msgid "准备开始您的项目？"
+msgstr "Ready to Start Your Project?"
+
+msgid "联系我们，获取专业的商业解决方案和个性化服务"
+msgstr "Contact us for professional business solutions and personalized services"
+
+msgid "立即咨询"
+msgstr "Get Quote" 

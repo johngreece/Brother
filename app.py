@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, session, g
 from flask_sqlalchemy import SQLAlchemy
+from flask_babel import Babel, gettext, ngettext
 from datetime import datetime
 import os
 
@@ -8,7 +9,16 @@ app.config['SECRET_KEY'] = 'your-secret-key-here'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///company.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+# 国际化配置
+app.config['LANGUAGES'] = {
+    'zh': '中文',
+    'en': 'English'
+}
+app.config['BABEL_DEFAULT_LOCALE'] = 'zh'
+app.config['BABEL_DEFAULT_TIMEZONE'] = 'Asia/Shanghai'
+
 db = SQLAlchemy(app)
+babel = Babel(app)
 
 # 数据模型
 class News(db.Model):
@@ -31,6 +41,19 @@ class Service(db.Model):
     name = db.Column(db.String(200), nullable=False)
     description = db.Column(db.Text, nullable=False)
     icon = db.Column(db.String(100))
+
+# 语言选择函数
+@babel.localeselector
+def get_locale():
+    if 'lang' in session:
+        return session['lang']
+    return request.accept_languages.best_match(app.config['LANGUAGES'].keys())
+
+# 语言切换路由
+@app.route('/language/<language>')
+def set_language(language):
+    session['lang'] = language
+    return redirect(request.referrer or url_for('index'))
 
 # 路由
 @app.route('/')
